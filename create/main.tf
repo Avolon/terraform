@@ -54,5 +54,5 @@ module "ya_instance_2" {
   source                = ".modules/instance"
   instance_family_image = "lamp"
   vpc_subnet_id         = yandex_vpc_subnet.subnet2.id
-  zone                  = yandex_vpc_subnet.subnet1.zone
+  zone                  = yandex_vpc_subnet.subnet2.zone
 }
